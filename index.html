@@ -13,26 +13,27 @@
         <img src="Imagen/Logo.png" class="logo">
     </header>
     <main>
-        <div class="encriptadores">
+        <div class="encriptador">
             <textarea placeholder="Ingrese el texto aqui" class="input-principal"></textarea>
-            <div class="resultado">
-                <img src="Imagen/Muñeco.svg">
-                <h1>Ningún mensaje fue encontrado</h1>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <div class="botones">
+                <div class="aviso">
+                    <img src="Imagen/bi_exclamation-circle-fill.png" class="exclamacion">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <input type="button" value="Encriptar" class="cifrar">
+                <input type="button" value="Desencriptar" class="descifrar">
             </div>
         </div>
-        
-        <div class="botones">
-            <div class="aviso">
-                <img src="Imagen/bi_exclamation-circle-fill.png" class="exclamacion">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-            <input type="button" value="Encriptar" class="cifrar">
-            <input type="button" value="Desencriptar" class="descifrar">
+
+        <div class="resultado">
+            <img src="Imagen/Muñeco.svg">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
     </main>
     <footer>
-        <a href="https://github.com/GmathDO"><img src="Imagen/github-icon-2048x1998-3j08tfre.png"></a>
+        <a href="https://github.com/GmathDO"><img src="Imagen/github-icon-2048x1998-3j08tfre.png" class="github"></a>
         <p class="copyright">&copy 2024 Gerardo Duarte</p>
     </footer>
 </body>
