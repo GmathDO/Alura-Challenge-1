@@ -1,0 +1,112 @@
+/*Colores: 
+    #0A3871
+    #D8DFE8
+    #343A40;
+    #495057
+*/
+
+body{
+    background: #F3F5FC;
+}
+
+.logo{
+    padding: 2.5rem 0 0 2.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input-principal{
+    height: 60%;
+}
+
+.input-principal::placeholder{
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+.aviso{
+    margin-bottom: 10px;
+}
+
+.exclamacion{
+    float: left;
+    margin-right: 5px;
+}
+
+.cifrar{
+    min-width: 328px;
+    min-height: 67px;
+    background-color: #0A3871;
+    color: #D8DFE8;
+    border-radius: 24px;
+    margin-right: 24px;
+}
+
+.descifrar{
+    min-width: 328px;
+    min-height: 67px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.resultado{
+    background-color: white;
+    width: 480px;
+    height: 880px;
+    border-radius: 32px;
+    box-shadow: 0 10px 25px #D8DFE8;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.resultado img{
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.resultado h1{
+    color: #343A40;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.resultado p{
+    color: #343A40;
+}
+
+footer{
+    background: #0A3871;
+    margin-top: 50px;
+}
+
+.github{
+    width: 5%;
+}
+
+@media screen and (width < 1179px) {
+    main{
+        flex-direction: column;
+    }
+
+    .resultado{
+        width: auto;
+    }
+
+    .resultado img{
+        display: none;
+    }
+}
