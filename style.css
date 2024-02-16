@@ -64,7 +64,7 @@ main{
 .resultado{
     background-color: white;
     width: 480px;
-    height: 880px;
+    height: 850px;
     border-radius: 32px;
     box-shadow: 0 10px 25px #D8DFE8;
     display: grid;
@@ -99,14 +99,22 @@ footer{
 
 @media screen and (width < 1179px) {
     main{
-        flex-direction: column;
+    }
+
+    .encriptador{
+        height: 30rem;
     }
 
     .resultado{
-        width: auto;
+        flex-basis: 684px;
+        height: 127.5px;    
     }
 
     .resultado img{
+        display: none;
+    }
+
+    .resultado br{
         display: none;
     }
 }
