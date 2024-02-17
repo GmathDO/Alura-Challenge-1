@@ -17,12 +17,13 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 86.5vh;
 }
 
 .encriptador{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .input-principal{
@@ -64,7 +65,8 @@ main{
 .resultado{
     background-color: white;
     width: 480px;
-    height: 850px;
+    max-height: 914px;
+    margin-top: -60px;
     border-radius: 32px;
     box-shadow: 0 10px 25px #D8DFE8;
     display: grid;
@@ -102,12 +104,15 @@ footer{
     }
 
     .encriptador{
-        height: 30rem;
+        height: 48rem;
+        justify-content: space-around;
     }
 
     .resultado{
         flex-basis: 684px;
-        height: 127.5px;    
+        height: auto;
+        padding: 20px 0;
+        margin: 0;  
     }
 
     .resultado img{
@@ -117,4 +122,39 @@ footer{
     .resultado br{
         display: none;
     }
+}
+
+@media screen and (width < 660px) {
+    main{
+        height: 100vh;
+    }
+
+    .logo{
+        padding: 2.5rem 0 0;
+    }
+    
+    .encriptador{
+        height: 80vh;
+    }
+
+    .input-principal{
+        margin-top: 7%;
+    }
+
+    .botones{
+        margin: 0.7rem 0;
+    }
+
+    .boton-conteiner{
+        max-width: 330px;
+    }
+
+    .cifrar{
+        margin: 0 0 20px;
+    }
+
+    .resultado{
+        flex-basis: 330px;
+    }
+
 }
