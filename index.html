@@ -22,21 +22,28 @@
                     <p>Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="boton-conteiner">
-                    <input type="button" value="Encriptar" class="cifrar">
-                    <input type="button" value="Desencriptar" class="descifrar">
+                    <button class="encriptar boton">Encriptar</button>
+                    <button class="desencriptar boton">Desencriptar</button>
                 </div>
             </div>
         </div>
 
         <div class="resultado">
-            <img src="Imagen/Muñeco.svg" class="ocultar">
-            <h1 class="ocultar">Ningún mensaje fue <br>encontrado</h1>
-            <p class="ocultar">Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+            <textarea class="texto-resultado con-resultado"></textarea>
+            <button class="copiar con-resultado">Copiar></button>
+
+            <div class="sin-resultado">
+                <img src="Imagen/Muñeco.svg" class="ocultar">
+                <h1 class="ocultar">Ningún mensaje fue <br>encontrado</h1>
+                <p class="ocultar">Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+            </div>
         </div>
     </main>
     <footer>
         <a href="https://github.com/GmathDO"><img src="Imagen/github-icon-2048x1998-3j08tfre.png" class="github"></a>
         <p class="copyright">&copy 2024 Gerardo Duarte</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
