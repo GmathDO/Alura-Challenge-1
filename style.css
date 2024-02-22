@@ -1,10 +1,3 @@
-/*Colores: 
-    #0A3871
-    #D8DFE8
-    #343A40;
-    #495057
-*/
-
 body{
     background: #F3F5FC;
 }
@@ -69,7 +62,7 @@ main{
     border: 1px solid #0A3871;
 }
 
-.encriptar:hover, .desencriptar:hover{
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
     transform: scale(1.05);
 }
 
@@ -92,6 +85,10 @@ main{
 .texto-resultado{
     font-size: 1.5rem;
     max-height: 420px;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #0A3871;
 }
 
 .copiar{
